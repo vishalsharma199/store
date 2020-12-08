@@ -1,0 +1,389 @@
+.html{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.clr{
+    clear: both;
+}
+
+/*---------*/
+.content{
+    #wrapper{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        background: #ECF0F1;
+    
+        .container{
+        width: 100%;
+        max-width: 1280px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        
+
+            header{
+                line-height: 60px;
+    
+                
+            #brand_logo{
+                float: left;
+                width: 50%;
+                max-width: 230px;
+                img{
+                    width: 100%;
+                }
+            }
+    
+                #usermenu{
+                    float: right;
+                    width: 300px;
+                    text-align: right;
+                    ul{
+                        li{
+                            list-style: none;
+                            width: 100px;
+                            display: inline-block;
+                            a{
+                                color: #17152A;
+                                text-decoration: none;
+                                font-size: 20px;
+                                font-family: myriad pro;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        
+        }
+
+        #navigationbar{
+            background: #252525;
+            height: 50px;
+            line-height: 50px;
+
+            #main-nav{
+                float: left;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: myriad-pro;
+                    font-size: 16px;
+                    margin: 0 8px;
+                }
+
+                a:hover{
+                    color: #FE51AB;
+                }
+                a.active{
+                    color: #eb0606;
+                }
+            }
+
+            #main-search{
+                float: right;
+                width: 230px;
+                line-height: 50px;
+                
+                .mainsearch{
+                    background: none;
+                    color: #ccc;
+                    border: none;
+                    font-family: myriad pro;
+                    font-family: 12px;
+                    width: 100%;
+                    float: left;
+                    line-height: 50px;
+                }
+    
+                #btn-search{
+                    background: none;
+                    border: none;
+                    color: #ccc;
+                    cursor: pointer;
+                    float: left;
+                    margin-left: -50px;
+                    line-height: 50px;
+                }
+            }
+            
+        }
+        .heading{
+            border: 1px solid #000 ;
+            background: #252525;
+            .heading-block{
+                width: 100%;
+                height: auto;
+                line-height: 30px;
+                color: #fff;
+                border-left: 15px solid #000;
+                padding-left: 10px;
+                margin-top: 10px;
+                font-family: myriad pro;
+                h2{
+                    font-size: 22px;
+                }
+            } 
+        }
+
+        .categories-box{
+            width: 242px;
+            height: 245px;
+            margin: 10px 0 30px;
+            border: 2px solid black;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            margin-right: 10px;
+
+            span{
+                display: block;
+                position: absolute;
+                background:rgba(0,0,0, 0.6);
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                z-index: 999;
+                bottom: 0;
+            }
+            img{
+                max-width: 100%;
+                transition: all 0.5s ease;
+            }
+            :hover img{
+                transform: scale(1.5,1.5);
+                transition: all 0.5s ease;
+            }
+            :hover span{
+                color: #FE51AB;
+            }
+        }
+        .categories-box:last-child{
+            margin-right: 0;
+        }
+
+        .product{
+            border: 1px solid #000 ;
+            background: #252525;
+            .product-block{
+               
+                width: 100%;
+                height: auto;
+                line-height: 30px;
+                color: #fff;
+                border-left: 15px solid #000;
+                padding-left: 10px;
+                margin-top: 10px;
+                font-family: myriad pro;
+                h2{
+                    font-size: 22px;
+                }
+            } 
+        }
+        .product-box{
+            border: 2px solid black;
+            width: 240px;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            margin: 10px 0 30px; 
+            float: left;
+            margin-right: 10px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .product-box:nth-child(5n){
+            margin-right: 0;
+        }
+        .product-trans{
+            position: absolute;
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            .circularbtns a{
+                width: 45px;
+                height: 45px;
+                display: inline-block;
+                background: #fff;
+                color: #252525;
+                text-decoration: none;
+                line-height: 45px;
+                text-align: center;
+                margin: 0 20px;
+                font-size: 18px;
+                border-radius: 50%;
+            }
+            .circularbtns a:hover{
+                background: #252525;
+                color: #fff;
+            }
+        }
+        .product-box:hover .product-trans{
+            opacity: 1;
+            transition: all 0.5s ease;
+            text-align: center;
+            padding-top: 110px;
+            box-sizing: border-box;
+        }
+
+        .product-name, .product-price{
+            width: 80%;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: myriad pro;
+            margin: 20px auto;
+            min-height: 40px;
+        }
+        .product-btn a{
+            display: inline-block;
+            width: 150px;
+            height: 30px;
+            background: #fff;
+            text-decoration: none;
+            color: #171628;
+            font-family: myriad pro;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .product-price{
+            height: auto;
+            margin-bottom: 10px;
+            min-height: auto;
+        }
+
+        .offer{
+            border: 1px solid #000 ;
+            background: #252525;
+            .offer-block{
+                width: 100%;
+                height: auto;
+                line-height: 30px;
+                color: #fff;
+                border-left: 15px solid #000;
+                padding-left: 10px;
+                margin-top: 10px;
+                font-family: myriad pro;
+                h2{
+                    font-size: 22px;
+                }
+            } 
+        }
+        .offerbx{
+            border: 2px solid black;
+            margin-top: 10px;
+            width: 395px;
+            height: 100px;
+            float: left;
+            margin-right: 16px;
+        }
+        .offerbx :last-child{
+            margin: 0;
+        }
+
+        footer{
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #252525;
+            color: #fff;
+            .footer-wide{
+                width: 365px;
+                float: left;
+                margin-right: 20px;
+            }
+            .footer-wide:last-child{
+                margin-right: 0;
+            }
+            .footer-list{
+                margin-right: 25px;
+                width: 225px;
+                float: left;
+                ul {
+                    li{
+                        display: inline-block;
+                        width: 50%;
+                        line-height: 30px;
+                        font-family: myriad pro;
+                        font-size: 14px;
+                        a{
+                            text-decoration: none;
+                        }
+                        
+                        
+                    }
+
+                }
+               
+            }
+
+            h3{
+                margin: 0;
+                font-size: 22px;
+                font-family: myriad pro;
+                margin-bottom: 25px;
+            }
+
+            p{
+                text-align: justify;
+                font-size: 14px;
+                color: #fff;
+                font-family: myriad pro;
+            }
+            a:hover{
+                color: #fff;
+            }
+            .subsmail{
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                box-sizing: border-box;
+                padding-left: 5px;
+                border: none;
+                float: left;
+                color: #999;
+                background: #e4e4e4;
+            }
+            .subsbtn{
+                width: 40px;
+                height: 40px;
+                background:  #999;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                border: 0;
+                float: left;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: -40px;
+                
+            }
+            .text-note{
+                font-style: italic;
+                margin: 20px 0;
+            }
+            
+        }
+
+    }
+}
